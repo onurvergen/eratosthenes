@@ -4,7 +4,7 @@ elenecekdizi = []
 sayi = input("Sayi girin:")
 sayi = int(sayi)
 
-while(asalsayac <= sayi):
+while(asalsayac < sayi):
     if(not elenecekdizi):
         asaldizi.append(asalsayac)
         asaltut = asalsayac
