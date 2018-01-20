@@ -24,8 +24,11 @@ while(asalsayac < sayi):
             asaltut = asalsayac
             asaltut += asalsayac
             while (asaltut <= sayi):
-                elenecekdizi.append(asaltut)
-                asaltut += asalsayac
+                if(elenecekdizi.count(asaltut) >= 1):
+                    asaltut += asalsayac
+                else:
+                    elenecekdizi.append(asaltut)
+                    asaltut += asalsayac
             asalsayac +=1
 
 for yaz in asaldizi:
